@@ -1,0 +1,19 @@
+* Position this as a part research and part survey paper.
+
+* Two clients sending login requests for "unknown principal"
+  are able to cause 100% CPU utilization on the KDC.
+
+  Incoming traffic is < 45 KiB and and outgoing traffic is
+  < 40 KiB.
+
+  Client's CPU utilization is <= 15 percent. This can be reduced
+  further a lot.
+
+  AS-REQ UDP packet size is 241 bytes
+
+  KRB Error UDP packet size is 214 bytes
+
+* It seems the KDC is only able to handle < 150 bad queries
+  per second.
+
+
